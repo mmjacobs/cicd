@@ -1,4 +1,4 @@
-Manifest-Version: 1.0.0.202008130646
+Manifest-Version: 1.0.0.202008140605
 Bundle-SymbolicName: Test.module
 Bundle-ManifestVersion: 2
 TIBCO-BW-Edition: bwcloud
@@ -11,7 +11,7 @@ Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tib
 TIBCO-BW-ConfigProfile: META-INF/default.substvar
 TIBCO-BW-Version: 2.5.3 V26 2020-05-15
 Bundle-Name: Test Module
-Bundle-Version: 1.0.0.202008130646
+Bundle-Version: 1.0.0.202008140605
 Bundle-ClassPath: .
 TIBCO-BW-ApplicationModule: META-INF/module.bwm
 TIBCO-BW-JobSharedVariables: META-INF/module.jsv

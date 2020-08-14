@@ -20,15 +20,15 @@
             <packageName>test.module</packageName>
             <processName>test.module.SubProcess</processName>
             <testCaseResult xsi:type="testCaseResultDTO">
-                <assertionFailure>0</assertionFailure>
+                <assertionFailure>1</assertionFailure>
                 <assertionResult xsi:type="assertionResultDTO">
                     <activityName>End</activityName>
-                    <assertionStatus>passed</assertionStatus>
+                    <assertionStatus>failed</assertionStatus>
                     <instanceId>bw0a100</instanceId>
-                    <message></message>
+                    <message>BX-200006: Assertion error @End</message>
                 </assertionResult>
                 <assertions>1</assertions>
-                <assertionsRun>1</assertionsRun>
+                <assertionsRun>0</assertionsRun>
                 <processFailures>0</processFailures>
                 <testCaseFile>/Test.module/Tests/Test.module1.bwt</testCaseFile>
             </testCaseResult>

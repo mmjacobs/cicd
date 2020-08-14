@@ -1,2 +1,2 @@
 Tests for test.module.SubProcess
-Tests run : 1    Success : 1 	Failure : 0	Errors : 0
+Tests run : 1    Success : 0 	Failure : 1	Errors : 0
