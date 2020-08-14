@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emulation:EmulationData xmlns:emulation="http:///emulation.ecore" isBW="true" location="/Test.module/Tests/Test.module1.bwt">
+  <ProcessNode Id="test.module.SubProcess" Name="test.module.SubProcess" ModelType="BW" moduleName="Test.module">
+    <Assertion Id="31edbb16-c6e7-49ac-9f8d-e1a38e35aa83" Name="End" hasDecoration="true">
+      <Lang>urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0</Lang>
+      <Expression>
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;End-input&quot;/>&lt;xsl:template match=&quot;/&quot;>&lt;xsl:choose>&lt;xsl:when test=&quot;$End-input/op=concat( 'World', ', Hi from TIBCO')&quot;>&lt;result status=&quot;passed&quot; message=&quot;Assertion passed.&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;result status=&quot;failed&quot; message=&quot;Assertion failed.&quot;/>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/xsl:template>&lt;/xsl:stylesheet></Expression>
+      <OriginalExpression>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>
+&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;End-input&quot;/>&lt;xsl:template name=&quot;End&quot; match=&quot;/&quot;>&lt;Primitive-Assertion>&lt;AssertType>&lt;string>&lt;testInput>&lt;xsl:value-of select=&quot;$End-input/op&quot;/>&lt;/testInput>&lt;goldInput>&lt;xsl:value-of select=&quot;concat( &amp;quot;World&amp;quot;, &amp;quot;, Hi from TIBCO&amp;quot;)&quot;/>&lt;/goldInput>&lt;/string>&lt;/AssertType>&lt;/Primitive-Assertion>&lt;/xsl:template>&lt;/xsl:stylesheet></OriginalExpression>
+    </Assertion>
+    <Operation Name="callProcess" serviceName="test.module.SubProcess">
+      <Inputs Id="a5cc0f7b-a007-457b-b4ba-cc0fcc3df9f8Test.module_test.module.SubProcess_callProcess_Start" Name="Start" isDefault="true" type="CALLPROCESS">
+        <informations Name="input" nameSpace="http://www.example.com/namespaces/tns/1597294240033">
+          <nameSpaces prefix="tns" nameSapce="http://www.example.com/namespaces/tns/1597294240033"/>
+          <Parameter Name="tns:Element">
+            <parameters Name="tns:name" Value="World" type="string" nameSpace="http://www.example.com/namespaces/tns/1597294240033"/>
+          </Parameter>
+        </informations>
+      </Inputs>
+      <resolvedInput inputValue="&lt;tns:Element xmlns:tns='http://www.example.com/namespaces/tns/1597294240033' >&lt;tns:name>World&lt;/tns:name>&lt;/tns:Element>"/>
+    </Operation>
+  </ProcessNode>
+</emulation:EmulationData>
